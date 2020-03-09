@@ -1,145 +1,31 @@
-  
-<!-- Navigation -->
-<nav class="navbar fixed-top navbar-expand-lg">
-  <a class="navbar-brand" href="<%= root_path %>">
-    <%= image_tag("mwphotography.png", {:class => "d-inline-block align-center", :style => "height:55px;width:120px;"}) %>
-    <strong></strong>
-  </a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <a class="navbar-brand" href="https://www.youtube.com/channel/UCOv7i1ojVrfHxMj2KAuKxtg" target="_blank">
-    <strong></strong>
-  </a>
-  <div class="collapse navbar-collapse" id="navbarNavDropdown">
-    <ul class="navbar-nav">
-      <li class="nav-item <%= active_class?(gives_path) %>">
-        <a class="navbar-brand nav-link" href="#services">PORTFOLIO</a>
-      </li>
-      <li class="nav-item <%= active_class?(resources_path) %>">
-        <a class="navbar-brand nav-link" href="#prices">SERVICE</a>
-      </li>
-      <li class="nav-item <%= active_class?(contacts_path) %>">
-        <a class="navbar-brand nav-link" href="#contactus">CONTACT</a>
-      </li>
-    </ul>
-  </div>
-</nav>
-
-<!-- Portfolio Section -->
-<section id="services">
-  </br></br></br></br></br>
-  <div class="container-fluid p-0">
-    <div class="row no-gutters">
-      <div class="col-lg-4 col-sm-6">
-        <a class="portfolio-box">
-          <%= image_tag("portfolio_1.png", {:class => "img-fluid", :style => "height:600px;width:400px;"}) %>
-        </a>
-      </div>
-      <div class="col-lg-4 col-sm-6">
-        <a class="portfolio-box">
-          <%= image_tag("portfolio_2.png", {:class => "img-fluid", :style => "height:600px;width:400px;"}) %>
-        </a>
-      </div>
-      <div class="col-lg-4 col-sm-6">
-        <a class="portfolio-box">
-          <%= image_tag("portfolio_3.png", {:class => "img-fluid", :style => "height:600px;width:400px;"}) %>
-        </a>
-      </div>
-    </div>
-    </br></br>
-    <div class="row no-gutters">
-      <div class="col-lg-4 col-sm-6">
-        <a class="portfolio-box">
-          <%= image_tag("portfolio_4.png", {:class => "img-fluid", :style => "height:600px;width:400px;"}) %>
-        </a>
-      </div>
-      <div class="col-lg-4 col-sm-6">
-        <a class="portfolio-box">
-          <%= image_tag("portfolio_5.png", {:class => "img-fluid", :style => "height:600px;width:400px;"}) %>
-        </a>
-      </div>
-      <div class="col-lg-4 col-sm-6">
-        <a class="portfolio-box">
-          <%= image_tag("portfolio_6.png", {:class => "img-fluid", :style => "height:600px;width:400px;"}) %>
-        </a>
-      </div>
+<!-- Header -->
+<header class="masthead" style="height: 100px;">
+  <div class="container d-flex h-100 align-items-center">
+    <div class="mx-auto text-center">
+      <br><br><br><br>
+      <h1 class="animated fadeInDownBig" style="font-size: 3em;">GIVE ONLINE</h1>
+      <p>
+      <h1 style="font-size: 1.5em;">BE A PART OF LIVES BEING TRANSFORMED</h1>
     </div>
   </div>
-</section>
+</header>
 
-<!-- Prices Section -->
-<section id="prices">
-  </br></br></br></br></br>
-  <div class="container-fluid p-0">
-    <div class="row no-gutters">
-      <div class="col-lg-3 col-sm-6">
-        <a class="portfolio-box">
-          <%= image_tag("portfolio_1.png", {:class => "img-fluid", :style => "height:450px;width:300px;"}) %>
-        </a>
-      </div>
-      <div class="col-lg-3 col-sm-6">
-        <a class="portfolio-box">
-          <%= image_tag("portfolio_2.png", {:class => "img-fluid", :style => "height:450px;width:300px;"}) %>
-        </a>
-      </div>
-      <div class="col-lg-3 col-sm-6">
-        <a class="portfolio-box">
-          <%= image_tag("portfolio_3.png", {:class => "img-fluid", :style => "height:450px;width:300px;"}) %>
-        </a>
-      </div>
-      <div class="col-lg-3 col-sm-6">
-        <a class="portfolio-box">
-          <%= image_tag("portfolio_4.png", {:class => "img-fluid", :style => "height:450px;width:300px;"}) %>
-        </a>
-      </div>
-    </div>
-</section>
-
-<!-- Contact Section -->
-<section id="contactus">
-  </br></br></br></br></br>
-  <div class="container-fluid p-0">
-    <div class="row justify-content-center">
-      <div class="col-lg-8 text-center">
-        <h2 class="mt-0">Contact </h2>
-        <hr class="divider my-4">
-        <p class="text-muted mb-5">Ready to start your next project with us? Give us a call or send us an email and we will get back to you as soon as possible!</p>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-lg-4 ml-auto text-center mb-5 mb-lg-0">
-        <i class="fas fa-phone fa-3x mb-3 text-muted"></i>
-        <div>+1 (202) 555-0149</div>
-      </div>
-      <div class="col-lg-4 mr-auto text-center">
-        <i class="fas fa-envelope fa-3x mb-3 text-muted"></i>
-        <!-- Make sure to change the email address in anchor text AND the link below! -->
-        <a class="d-block" href="mailto:contact@yourwebsite.com">contact@mwphotography.site</a>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- Footer -->
-<footer class="footer text-center">
+<!-- Give Section -->
+<section id="give" class="projects-section bg-light">
   <div class="container">
-    <a class="mx-3" href="https://www.youtube.com/channel/UCOv7i1ojVrfHxMj2KAuKxtg" target="_blank">
-      <i class="fab fa-youtube"></i>
-    </a>
-    <a class="mx-3" href="https://www.twitter.com/MyVoiceOfHeaven" target="_blank">
-      <i class="fab fa-twitter"></i>
-    </a>
-    <a class="mx-3" href="https://www.facebook.com/Voice-of-Heaven-109066700640947/" target="_blank">
-      <i class="fab fa-facebook-f"></i>
-    </a>
-  <!-- Scroll to Top Button-->
-  <a class="mx-3 scroll-to-top rounded js-scroll-trigger" href="#page-top">
-    <i class="fas fa-angle-up"></i>
-  </a>
-    <p class="text-muted small mb-0">Copyright &copy; MW Photography 2020</p>
-  </div>
-</footer>
-
-</br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br>
-
+    <div class="row align-items-center no-gutters mb-4 mb-lg-5">
+      <div class="col-xl-5 col-lg-5">
+          <h1 style="color: #62c6bb; font-size: 5em;">YOUR GENEROSITY MAKES A DIFFERENCE</h1>
+          <p>
+          <h2 class="text-black-100 mx-auto mt-2 mb-5 text-left">
+            The mission and vision of Voice of Heaven are directly funded by the generosity of people like you. We exist so that all people can find new life in Christ and we would love for you to join us in that mission. We honor your gifts with faithful stewardship, ethical business practices, and accountability so that you have full confidence in the financial integrity of Voice of Heaven. All donations to Voice of Heaven are 100% tax deductible.
+          </h2>
+        
+      </div>
+      <div class="col-xl-7 col-lg-7">
+        <div class="featured-text text-center text-lg-left">
+          <script src="https://donorbox.org/widget.js" paypalExpress="false"></script><iframe allowpaymentrequest="" frameborder="0" height="900px" name="donorbox" scrolling="no" seamless="seamless" src="https://donorbox.org/embed/voiceofheaven" style="max-width: 500px; min-width: 310px; max-height:none!important" width="100%"></iframe>
+      </div>
+        </div>
+    </div>
+</section>

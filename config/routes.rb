@@ -5,7 +5,7 @@ Rails.application.routes.draw do
   resources :gives
   resources :abouts
   resources :voices
-  get 'voices/index'
+  get 'welcome/index'
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
-  root 'voices#index'
+  root 'welcome#index'
 end

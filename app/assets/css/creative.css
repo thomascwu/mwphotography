@@ -9664,22 +9664,63 @@ header.masthead h1 {
   text-align: center;
   opacity: 0;
   color: #fff;
-  background: rgba(244, 98, 58, 0.9);
+  background: #ffc107;
   transition: opacity 0.25s ease;
   text-align: center;
 }
 
 #portfolio .container-fluid .portfolio-box .portfolio-box-caption .project-category {
   font-family: "Merriweather Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  font-size: 0.85rem;
+  font-size: 3.85rem;
   font-weight: 600;
   text-transform: uppercase;
 }
 
 #portfolio .container-fluid .portfolio-box .portfolio-box-caption .project-name {
-  font-size: 1.2rem;
+  font-size: 2.2rem;
 }
 
 #portfolio .container-fluid .portfolio-box:hover .portfolio-box-caption {
-  opacity: 1;
+  opacity: 0.8;
+}
+
+/* Display price info with sample images */
+#serviceprice .container-fluid {
+  max-width: 1920px;
+}
+
+#serviceprice .container-fluid .portfolio-box {
+  position: relative;
+  display: block;
+}
+
+#serviceprice .container-fluid .portfolio-box .portfolio-box-caption {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  opacity: 0;
+  color: #fff;
+  background: #ffc107;
+  transition: opacity 0.25s ease;
+  text-align: center;
+}
+
+#serviceprice .container-fluid .portfolio-box .portfolio-box-caption .project-category {
+  font-family: cursive;
+  font-size: 3.85rem;
+  font-weight: 600;
+}
+
+#serviceprice .container-fluid .portfolio-box .portfolio-box-caption .project-name {
+  font-size: 2.2rem;
+}
+
+#serviceprice .container-fluid .portfolio-box:hover .portfolio-box-caption {
+  opacity: 0.8;
 }

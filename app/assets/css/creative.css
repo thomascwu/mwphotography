@@ -2230,7 +2230,7 @@ textarea.form-control {
 
 .btn-primary {
   color: #fff;
-  background-color: #000000;
+  /*background-color: #000000;*/
   border-color: #f4623a;
 }
 

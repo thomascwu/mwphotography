@@ -30,9 +30,15 @@
       <li class="nav-item <%= active_class?(resources_path) %>">
         <a class="navbar-brand nav-link" href="#serviceprice">SERVICES</a>
       </li>
+      <li class="nav-item <%= active_class?(gives_path) %>">
+        <a class="navbar-brand nav-link" href="#scheduling">SCHEDULE</a>
+      </li>
       <li class="nav-item <%= active_class?(contacts_path) %>">
         <a class="navbar-brand nav-link" href="#contactus">CONTACT</a>
       </li>
+<!--       <li class="nav-item <%= active_class?(gives_path) %>">
+        <a class="navbar-brand nav-link" href="<%= meetings_path %>">SCHEDULE</a>
+      </li> -->
     </ul>
   </div>
 </nav>
@@ -203,6 +209,24 @@
         </a>
       </div>
     </div>
+  </div>
+</section>
+
+</br></br></br></br></br>
+
+<!-- Schedule Section -->
+<section id="scheduling">
+  </br></br></br></br></br>
+  <div class="container-fluid p-0">
+    <%= month_calendar events: @resources do |date, resources| %>
+      <%= date %>
+
+      <% resources.each do |resource| %>
+        <div>
+          <%= resource.name %>
+        </div>
+      <% end %>
+    <% end %>
   </div>
 </section>
 
